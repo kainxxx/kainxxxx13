@@ -1,0 +1,309 @@
+/* CSS du site */
+body,
+html {
+  height: 100%;
+  background-color: #c9d8b6;
+  padding-top: 57px; /*50px for the height of the navbar + 37px for the offset*/
+  padding-bottom: 50px; /*50px for the height of the bottom navbar*/
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: #f1ecc3;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #515e63;
+  font-weight: 700;
+}
+
+.logo-festi {
+  height: 100px;
+  width: auto;
+}
+
+section {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
+.btn-festi {
+  color: #57837b;
+  background-color: #f1ecc3;
+  border: 2px solid #70a99e;
+}
+
+.btn-festi:hover {
+  color: #57837b;
+  background-color: #c9c4a3;
+  border: 2px solid #57837b;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+p,
+li {
+  color: #515e63;
+  letter-spacing: 0.03rem;
+}
+
+.info-festival {
+  margin-top: 11px;
+  height: 38px;
+  margin-bottom: -17px;
+  background-color: #57837b;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.hero {
+  background-image: url(./images/hero-img.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__top-infos {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 13px;
+  height: 21px;
+  background-color: #57837b;
+  align-items: center;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 100%;
+  color: #3e494d;
+}
+
+.hero__bottom-infos {
+  text-align: center;
+  font-weight: 500;
+  margin-top: -5px;
+  height: 21px;
+  background-color: #57837b;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
+  color: #3e494d;
+}
+
+.presentation__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
+.programme__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
+.programme__movie-subtitle {
+  color: #57837b;
+  font-weight: 500;
+}
+
+.programme__movie-title {
+  color: #515e63;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.news__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
+.news__title {
+  color: #515e63;
+  font-weight: 500;
+}
+
+.news__author {
+  color: #57837b;
+}
+
+.about__section-title {
+  color: #57837b;
+  font-weight: 700;
+}
+
+p {
+  text-align-last: auto;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #f1ecc3;
+}
+
+
+/* Modal de réservation */
+.modal-header,
+.modal-body {
+  color: #57837b;
+  font-weight: 600;
+  background-color: #f1ecc3;
+  border: 3px solid #c9d8b6;
+}
+
+.form-control {
+  background-color: #f1ecc3;
+  border-color: #c9d8b6;
+}
+
+/* Modal d'alert réservation */
+.swal-modal {
+  background-color: #f1ecc3;
+  border: 3px solid #c9d8b6;
+}
+
+.swal-title {
+  color: #57837b;
+}
+
+.swal-text {
+  color: #515e63;
+}
+
+/* BreackPoint pour les différents supports */
+
+@media only screen and (min-width: 768px) {
+  /* tablettes et ordinateurs */
+  .text-overlay-left {
+    font-size: 3rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 50px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+  li {
+    font-size: 1.1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 2rem;
+  }
+  .my-title {
+    font-size: 2rem;
+    color: #57837b;
+  }
+  .sub-title {
+    font-size: 1.4rem;
+    color: #57837b;
+  }
+  .image-actu {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* smartphone */
+  .hero {
+    height: 50vh;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    background: #f1ecc3;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  body,
+  html {
+    padding-top: 57px;
+    padding-bottom: 0px;
+  }
+
+  .text-overlay-left {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  /* smartphone en mode portait */
+  .text-overlay-left {
+    font-size: 5rem;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    background: #f1ecc3;
+  }
+}
+
+/* google map responsive */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*Movie teaser responsive*/
+.embedresize {
+  max-width: 560px;
+  margin: auto;
+}
+
+.embedresize div {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.embedresize iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
